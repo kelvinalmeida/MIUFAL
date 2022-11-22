@@ -1,0 +1,69 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to right, #270a33, #37113f, #47194a, #592055, #6b2860);
+}
+
+#conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#conteudo h1{
+    text-align: center;
+    margin: 20px;
+    color: #fff;
+    background-color: rgb(67, 65, 73);
+    width: 100vw;
+}
+
+p {
+    text-align: center;
+    margin: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#conteudo #emojis a{
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+#conteudo #situacaoDaFila {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#emojis .fa-sad-tear {
+    color: red;
+}
+
+#emojis .fa-meh {
+    color: orange;
+}
+
+#emojis .fa-smile {
+    color: rgb(137, 202, 39);
+}
+
+#emojis .fa-face-laugh {
+    color: green;
+}
+
+
+#situacaoDaFila .fa-smile {
+    color: rgb(137, 202, 39);
+}
+
+/* #situacaoDaFila .fa-smile {
+    color: green;
+}
+
+#situacaoDaFila .fa-smile {
+    color: green;
+}
+#situacaoDaFila .fa-smile {
+    color: green;
+} */

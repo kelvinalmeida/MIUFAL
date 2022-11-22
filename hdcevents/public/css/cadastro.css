@@ -1,0 +1,71 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right, #270a33, #37113f, #47194a, #592055, #6b2860);
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#telaLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 400px;
+    color: white;
+    background-color: #045858;
+    border-radius: 10px;
+
+}
+
+h1 {
+    margin: 20px;
+}
+
+#telaLogin form {
+    width: 80%;
+}
+
+
+#telaLogin form div:nth-child(4) {
+    display: flex;
+    justify-content: center;
+}
+
+#telaLogin form div:nth-child(4) button {
+    margin: 10px;
+}
+
+#inscrever {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+#telaLogin p {
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+
+button {
+    margin: 20px;
+}
+
+#buttonAvançar {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    margin: 10px;
+    background-color: #fd3b11;
+}

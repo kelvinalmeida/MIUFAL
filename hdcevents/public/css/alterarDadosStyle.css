@@ -1,0 +1,151 @@
+ body, html {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #270a33, #37113f, #47194a, #592055, #6b2860);
+    overflow-x: hidden;
+}
+
+#navBar {
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+}
+
+#conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+#text_foto_dado {
+    display: flex;
+    position: relative;
+    top: 110px;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin: 0px 110px 0px 40px;
+}
+
+#form_img {
+    display: flex;
+    margin-top: 100px;
+}
+
+
+h1 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    width: 100vw;
+    height: 80px;
+    top: 50px;
+}
+
+
+img {
+    border-radius: 200px;
+    margin-right: 70px;
+    margin-top: 20px;
+    height: 200px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#imgFile {
+    width: 210px;
+}
+
+#conteudo #form_img #dados {
+    width: 400px;
+}
+
+#fotoDoPerfil {
+    text-align: center;
+}
+
+.ajuste {
+    margin: 20px 30px 20px 30px;
+}
+
+.btn {
+    margin: 50px;
+}
+
+@media (max-width: 900px) {
+    #form_img {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+
+    img {
+        margin: 0px 0px 50px 0px;
+        height: 150px;
+        width: 150px;
+    }
+
+    form {
+        flex-direction: column;
+        width: 80vw;
+        margin: 0px;
+    }
+    
+    #imgAndInput {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #imgAndInput img{
+        margin: 0px;
+
+    }
+
+    #imgFile {
+        margin: 0px;
+    }
+
+    #text_foto_dado {
+        position: static;
+        flex-direction: column;
+        align-items: center;
+        margin: 100px 0px 0px 0px;
+    }
+
+    p {
+        margin: 0px;
+    }
+
+    #button {
+        padding: 0px;
+        margin: 0px;
+        width: 100vw;
+    }
+
+    #button button {
+        margin: 20px;
+    }
+}
