@@ -21,8 +21,8 @@ Route::get('/fila', [EventController::class, 'fila']);
 Route::get('/perfil', [EventController::class, 'perfil']);
 Route::get('/alterardados', [EventController::class, 'alterarDados']);
 Route::get('/cadastro', [EventController::class, 'cadastro']);
-Route::get('/login', [EventController::class, 'login']);
 
+Route::post('/cadastro', [EventController::class, 'store']);
 // Route::get('/cardapio', function () {
 //     return view('cardapio');
 // });

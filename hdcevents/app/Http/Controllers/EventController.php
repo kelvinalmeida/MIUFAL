@@ -40,4 +40,19 @@ class EventController extends Controller
     public function login() {
         return view('login');
     }
+
+    public function store(Request $request) {
+
+        $event = new Event;
+
+        $event->nome = $request->nome;
+        $event->email = $request->email;
+        $event->telefone = $request->telefone;
+        $event->senha = $request->senha;
+        $event->fila = 0;
+        
+        $event->save();
+        
+        return redirect('/')->with('msg', 'Conta Criada com Sucesso!');
+    }
 }

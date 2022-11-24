@@ -3,7 +3,11 @@
 @section('title', 'Home')
 
 @section('content')
-
+    
+    @if(session('msg'))
+      <p class='msg'>{{ session('msg') }}</p>
+    @endif
+    
     <div id="conteudo">
         <h1>Bem Vindo!</h1>
         <a href="/fila">

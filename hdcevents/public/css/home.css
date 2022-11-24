@@ -24,3 +24,13 @@ body {
     font-size: 20px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
+
+p {
+    background-color: #84cf97;
+    font-weight: bold;
+    font-size: 30px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
