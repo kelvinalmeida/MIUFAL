@@ -22,11 +22,31 @@ class EventController extends Controller
     }
 
     public function fila() {
-        return view('fila');
+
+        // Peganto todos no banco
+        $events = Event::all();
+
+        // Contando os usuários que votaram. Se votou então: fila != -1
+        $cont = 0;
+        foreach($events as $event) {
+            if($event->fila != -1){
+                $cont++;
+            }
+        }
+
+        return view('fila', [
+            'events' => $events,
+            'cont' => $cont
+        ]);
     }
 
     public function perfil() {
-        return view('perfil');
+
+        $events = Event::all();
+
+        return view('perfil', [
+            'events' => $events
+        ]);
     }
 
     public function alterarDados() {
@@ -43,7 +63,7 @@ class EventController extends Controller
 
     public function store(Request $request) {
 
-        $event = new Event;
+        $event = new Event; // Pode salvar essa variavel fora coloca-la em todos os metodos(fila, perfil, ...).
 
         $event->nome = $request->nome;
         $event->email = $request->email;

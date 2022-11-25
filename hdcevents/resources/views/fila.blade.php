@@ -23,7 +23,8 @@
         <div id="situacaoDaFila">
             <i class="fas fa-smile fa-10x"></i>
         </div>
-        <p>Quantidade de Votos: 30</p>
+
+        <p>Quantidade de Votos: {{$cont}}</p>
     </div>
 </div>
 
