@@ -11,7 +11,7 @@
     <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-        <a class="navbar-brand" href="#">MIRU</a>
+        <a class="navbar-brand" href="/">MIRU</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -20,15 +20,34 @@
             <li class="nav-item">
             <a class="nav-link active" aria-current="/page" href="/">Home</a>
             </li>
+            @auth
             <li class="nav-item">
-            <a class="nav-link" href="/perfil">Perfil</a>
+                <a class="nav-link" href="/perfil">Meu Perfil</a>
             </li>
+            <li class="nav-item">
+                <form action="/logout" method="POST">
+                    @csrf
+                    <a href="/logout" 
+                    class="nav-link"
+                    onclick="event.preventDefault();
+                    this.closest('form').submit();">Sair</a>
+                </form>
+            </li>
+            @endauth
             <li class="nav-item">
             <a class="nav-link" href="/cardapio">Cardápio</a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="/fila">Situação da Fila</a>
             </li>
+            @guest
+            <li class="nav-item">
+                <a class="nav-link" href="/login">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/register">Registrar</a>
+            </li>
+            @endguest
         </ul>
         <!-- <span class="navbar-text">
             Navbar text with an inline element

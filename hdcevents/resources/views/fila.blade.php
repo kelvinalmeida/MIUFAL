@@ -8,6 +8,7 @@
     <h1>Veja a Situação da Fila em Tempo Real!</h1>
 
     <div id="emojis">
+        @auth
         <a href="#">
             <i class="fas fa-sad-tear fa-4x"></i>
         </a>
@@ -20,6 +21,7 @@
         <a href="#">
             <i class="fa-solid fa-face-laugh fa-4x"></i>
         </a>
+        @endauth
         <div id="situacaoDaFila">
             <i class="fas fa-smile fa-10x"></i>
         </div>

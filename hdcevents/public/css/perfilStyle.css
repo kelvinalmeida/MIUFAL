@@ -1,8 +1,16 @@
-body, html {
+body,
+html {
     margin: 0px;
     padding: 0px;
     width: 100vw;
-    background-image: linear-gradient(to right, #270a33, #37113f, #47194a, #592055, #6b2860);
+    background-image: linear-gradient(
+        to right,
+        #270a33,
+        #37113f,
+        #47194a,
+        #592055,
+        #6b2860
+    );
     overflow-x: hidden;
 }
 
@@ -41,24 +49,30 @@ p {
     margin-top: 100px;
 }
 
-
 h1 {
     display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
-    background-color:white;
+    background-color: white;
     width: 100vw;
     height: 80px;
     top: 50px;
 }
-
 
 img {
     border-radius: 200px;
     margin-right: 70px;
     margin-top: 20px;
     height: 200px;
+}
+
+nav ul li form {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 form {
@@ -96,7 +110,7 @@ form {
         width: 80vw;
         margin: 0px;
     }
-    
+
     #text_foto_dado {
         position: static;
         flex-direction: column;
