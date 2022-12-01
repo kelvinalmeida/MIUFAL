@@ -16,11 +16,7 @@ return new class extends Migration
         Schema::create('events', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('nome');
-            $table->string('email');
-            $table->bigInteger('telefone');
-            $table->bigInteger('senha');
-            $table->integer('fila', );
+            $table->integer('fila');
         });
     }
 

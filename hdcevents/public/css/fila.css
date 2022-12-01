@@ -1,6 +1,23 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    background-image: linear-gradient(to right, #270a33, #37113f, #47194a, #592055, #6b2860);
+    font-family: "Roboto", sans-serif;
+    background-image: linear-gradient(
+        to right,
+        #270a33,
+        #37113f,
+        #47194a,
+        #592055,
+        #6b2860
+    );
+}
+
+form {
+    display: flex;
+}
+
+#emogiVoto {
+    display: flex;
+    flex-direction: column;
+    float: left;
 }
 
 #conteudo {
@@ -9,7 +26,7 @@ body {
     align-items: center;
 }
 
-#conteudo h1{
+#conteudo h1 {
     text-align: center;
     margin: 20px;
     color: #fff;
@@ -22,12 +39,6 @@ p {
     margin: 20px;
     font-weight: bold;
     color: #fff;
-}
-
-#conteudo #emojis a{
-    margin: 10px;
-    height: 50px;
-    width: 50px;
 }
 
 #conteudo #situacaoDaFila {
@@ -51,7 +62,6 @@ p {
 #emojis .fa-face-laugh {
     color: green;
 }
-
 
 #situacaoDaFila .fa-smile {
     color: rgb(137, 202, 39);

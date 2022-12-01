@@ -29,11 +29,9 @@ class EventController extends Controller
         // Contando os usuários que votaram. Se votou então: fila != -1
         $cont = 0;
         foreach($events as $event) {
-            if($event->fila != -1){
                 $cont++;
-            }
         }
-
+        
         return view('fila', [
             'events' => $events,
             'cont' => $cont
@@ -65,14 +63,21 @@ class EventController extends Controller
 
         $event = new Event; // Pode salvar essa variavel fora coloca-la em todos os metodos(fila, perfil, ...).
 
-        $event->nome = $request->nome;
-        $event->email = $request->email;
-        $event->telefone = $request->telefone;
-        $event->senha = $request->senha;
-        $event->fila = 0;
+        // $event->nome = $request->nome;
+        // $event->email = $request->email;
+        // $event->telefone = $request->telefone;
+        // $event->senha = $request->senha;
+        // $event->fila = 0;
+
+        $event->fila = $request->fila;
         
+        // $user = auth()->user();
+        // $event->user_id = $user->id;
+        // $event->user_id = 2;
+
         $event->save();
         
-        return redirect('/')->with('msg', 'Conta Criada com Sucesso!');
+        return redirect('/fila');
+        // return redirect('/')->with('msg', 'Conta Criada com Sucesso!');
     }
 }
