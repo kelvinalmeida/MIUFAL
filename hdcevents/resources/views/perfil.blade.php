@@ -4,8 +4,6 @@
 
 @section('content')
 
-@foreach($events as $event)
-@if($event->nome == 'Kelvin Santos de Almeida Lima')
 <div id="conteudo">
 <h1>Meu Perfil</h1>
 
@@ -16,30 +14,32 @@
 
 <div id="form_img">
     
-    <img src="/img/perfil.png" alt="foto de perfil">
+    <img src="/img/events/{{$user->profile_photo_path}}" alt="foto de perfil">
     
-    <form>
+    <form id="form1">
         <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon1">Nome</span>
-            <input type="text" class="form-control" placeholder="{{$event->nome}}" aria-label="Username" aria-describedby="basic-addon1" disabled>
+            <input type="text" class="form-control" placeholder="{{$user->name}}" aria-label="Username" aria-describedby="basic-addon1" disabled>
         </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">Email</span>
-                    <input type="email" class="form-control" placeholder="{{$event->email}}" aria-label="Username" aria-describedby="basic-addon1" disabled>
-                </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">Tel</span>
-                    <input type="tel" class="form-control" placeholder="{{$event->telefone}}" aria-label="Username" aria-describedby="basic-addon1" disabled>
-                </div>
-            </form>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Email</span>
+            <input type="email" class="form-control" placeholder="{{$user->email}}" aria-label="Username" aria-describedby="basic-addon1" disabled>
         </div>
-        
-        <div id="button">
-            <button type="button" class="btn btn-light" onclick="window.location.href = '/'">Voltar</button>
-            <button type="button" class="btn btn-light" onclick="window.location.href = '/alterardados'">Alterar Dados</button>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Data De Criação</span>
+            <input type="email" class="form-control" placeholder="{{$user->created_at}}" aria-label="Username" aria-describedby="basic-addon1" disabled>
         </div>
-        
+        <!-- <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Tel</span>
+            <input type="tel" class="form-control" placeholder="(82) 9999-9999" aria-label="Username" aria-describedby="basic-addon1" disabled>
+        </div> -->
+    </form>
     </div>
-    @endif
-    @endforeach
+    
+    <div id="button">
+        <button type="button" class="btn btn-light" onclick="window.location.href = '/'">Voltar</button>
+        <button type="button" class="btn btn-light" onclick="window.location.href = '/alterardados'">Alterar Dados</button>
+    </div>
+        
+</div>
     @endsection

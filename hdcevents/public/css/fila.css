@@ -1,20 +1,59 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    background-image: linear-gradient(to right, #270a33, #37113f, #47194a, #592055, #6b2860);
+    font-family: "Roboto", sans-serif;
+    background-image: linear-gradient(
+        to right,
+        #270a33,
+        #37113f,
+        #47194a,
+        #592055,
+        #6b2860
+    );
+    /* overflow-x: hidden; */
 }
 
-#conteudo {
+#info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+}
+
+#form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#conteudo h1{
+#conteinerDeEmogi {
+    display: flex;
+}
+
+#emogiVoto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#emogiVoto input {
+    margin: 10px;
+}
+
+#emogiVoto p {
+    margin: 5px;
+}
+
+.col-12 {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+#conteudo h1 {
     text-align: center;
-    margin: 20px;
+    margin: 20px 0px 20px 0px;
     color: #fff;
     background-color: rgb(67, 65, 73);
-    width: 100vw;
+    width: 100%;
 }
 
 p {
@@ -24,16 +63,10 @@ p {
     color: #fff;
 }
 
-#conteudo #emojis a{
-    margin: 10px;
-    height: 50px;
-    width: 50px;
-}
-
 #conteudo #situacaoDaFila {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 #emojis .fa-sad-tear {
@@ -51,7 +84,6 @@ p {
 #emojis .fa-face-laugh {
     color: green;
 }
-
 
 #situacaoDaFila .fa-smile {
     color: rgb(137, 202, 39);

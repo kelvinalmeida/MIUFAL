@@ -9,7 +9,7 @@
     @endif
     
     <div id="conteudo">
-        <h1>Bem Vindo!</h1>
+        <h1>Bem Vindo de volta {{$user->name}}!</h1>
         <a href="/fila">
           <button>Situação da Fila</button>
         </a>

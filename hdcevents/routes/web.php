@@ -21,8 +21,12 @@ Route::get('/fila', [EventController::class, 'fila']);
 Route::get('/perfil', [EventController::class, 'perfil']);
 Route::get('/alterardados', [EventController::class, 'alterarDados']);
 Route::get('/cadastro', [EventController::class, 'cadastro']);
+Route::get('/apapg', [EventController::class, 'apagarfila']);
 
-Route::post('/cadastro', [EventController::class, 'store']);
+Route::post('/fila', [EventController::class, 'store']);
+Route::delete('/filaDestroy', [EventController::class, 'destroy']);
+// Route::post('/alterarDados', [EventController::class, 'storeAlterarFoto']);
+Route::put('/atualizarDados/Update', [EventController::class, 'update']);
 // Route::get('/cardapio', function () {
 //     return view('cardapio');
 // });
@@ -55,6 +59,6 @@ Route::middleware([
     'verified'
 ])->group(function () {
     Route::get('/dashboard', function () {
-        return view('dashboard');
+        return view('welcome');
     })->name('dashboard');
 });
