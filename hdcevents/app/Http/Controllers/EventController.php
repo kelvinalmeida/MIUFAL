@@ -12,11 +12,11 @@ class EventController extends Controller
     public function index() {
         
         $events = Event::all();
-        $user = auth()->user();
+        $usuario = auth()->user();
         
         return view('welcome', [
             'events' => $events,
-            'user' => $user
+            'usuario' => $usuario
         ]);
     }
 

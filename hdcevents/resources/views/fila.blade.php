@@ -59,8 +59,8 @@
             @csrf
             @method('DELETE')
             <button type="submit" class="btn btnDelete">Deletar</button>
-        </form>
-        @endauth -->
+        </form> -->
+        @endauth
 
         <div id="situacaoDaFila">
             <i class="fas {{$maior}} fa-10x"></i>
