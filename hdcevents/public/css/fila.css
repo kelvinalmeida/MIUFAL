@@ -8,30 +8,52 @@ body {
         #592055,
         #6b2860
     );
+    /* overflow-x: hidden; */
 }
 
-form {
+#info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#conteinerDeEmogi {
     display: flex;
 }
 
 #emogiVoto {
     display: flex;
     flex-direction: column;
-    float: left;
+    align-items: center;
 }
 
-#conteudo {
+#emogiVoto input {
+    margin: 10px;
+}
+
+#emogiVoto p {
+    margin: 5px;
+}
+
+.col-12 {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
 }
 
 #conteudo h1 {
     text-align: center;
-    margin: 20px;
+    margin: 20px 0px 20px 0px;
     color: #fff;
     background-color: rgb(67, 65, 73);
-    width: 100vw;
+    width: 100%;
 }
 
 p {
@@ -44,7 +66,7 @@ p {
 #conteudo #situacaoDaFila {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 #emojis .fa-sad-tear {
