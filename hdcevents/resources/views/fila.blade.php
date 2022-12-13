@@ -77,5 +77,5 @@
         </div> -->
     </div>
 </div>
-
+<script src="/js/fila.js"></script>
 @endsection
