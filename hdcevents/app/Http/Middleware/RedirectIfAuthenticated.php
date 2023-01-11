@@ -23,6 +23,13 @@ class RedirectIfAuthenticated
 
         foreach ($guards as $guard) {
             if (Auth::guard($guard)->check()) {
+                
+                // $usuario = auth()->user();
+
+                // // if($usuario->profile_photo_path) {
+                //     $usuario->profile_photo_path = 'perfil.png';
+                // // }
+
                 return redirect(RouteServiceProvider::HOME);
             }
         }

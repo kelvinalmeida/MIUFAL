@@ -7,16 +7,20 @@
 <div id="conteudo">
 <h1>Meu Perfil</h1>
 
-<div id="text_foto_dado">
-    <p id="fotoDoPerfil">Foto do Perfil</p>
-    <p id="dadosDeCadastro">Dados de Cadastro:</p>
-</div>
+<!-- <div id="text_foto_dado">
+    
+    
+</div> -->
 
 <div id="form_img">
     
-    <img src="/img/events/{{$user->profile_photo_path}}" alt="foto de perfil">
+    <div id="fotoPerfil">
+    <p id="fotoDoPerfil">Foto do Perfil</p>
+        <img src="/img/events/{{$user->profile_photo_path}}" alt="foto de perfil">
+    </div>
     
     <form id="form1">
+        <p id="dadosDeCadastro">Dados de Cadastro:</p>
         <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon1">Nome</span>
             <input type="text" class="form-control" placeholder="{{$user->name}}" aria-label="Username" aria-describedby="basic-addon1" disabled>

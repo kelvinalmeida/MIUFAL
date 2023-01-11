@@ -47,7 +47,10 @@ p {
 
 #form_img {
     display: flex;
+    /* justify-content: space-between;
+    background-color: aqua; */
     margin-top: 100px;
+    width: 800px;
 }
 
 h1 {
@@ -63,15 +66,16 @@ h1 {
 
 img {
     border-radius: 200px;
-    margin-right: 70px;
-    margin-top: 20px;
-    height: 200px;
+    /* margin-right: 70px; */
+    /* margin-top: 20px; */
+    height: 150px;
 }
 
 #form1 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: inherit;
 }
 
 #btnUpdate1 {
@@ -91,6 +95,7 @@ img {
 
 #imgFile {
     width: 210px;
+    margin: 0px;
 }
 
 #conteudo #form_img #dados {
@@ -135,6 +140,8 @@ img {
         display: flex;
         flex-direction: column;
         align-items: center;
+        /* margin-right: 100px; */
+        /* background-color: aqua; */
     }
 
     #imgAndInput img {

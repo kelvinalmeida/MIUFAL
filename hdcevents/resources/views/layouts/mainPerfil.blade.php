@@ -24,15 +24,6 @@
             <li class="nav-item">
                 <a class="nav-link" href="/perfil">Meu Perfil</a>
             </li>
-            <li class="nav-item">
-                <form action="/logout" method="POST">
-                    @csrf
-                    <a href="/logout" 
-                    class="nav-link"
-                    onclick="event.preventDefault();
-                    this.closest('form').submit();">Sair</a>
-                </form>
-            </li>
             @endauth
             <li class="nav-item">
             <a class="nav-link" href="/cardapio">Cardápio</a>
@@ -48,6 +39,17 @@
                 <a class="nav-link" href="/register">Registrar</a>
             </li>
             @endguest
+            @auth
+            <li class="nav-item">
+                <form action="/logout" method="POST">
+                    @csrf
+                    <a href="/logout" 
+                    class="nav-link"
+                    onclick="event.preventDefault();
+                    this.closest('form').submit();">Sair</a>
+                </form>
+            </li>
+            @endauth
         </ul>
         <!-- <span class="navbar-text">
             Navbar text with an inline element
